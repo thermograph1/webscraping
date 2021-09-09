@@ -20,6 +20,7 @@ accessories = []
 ac_tables = html_soup.find_all('table',
                             class_='terraria sortable')
 
+# Extract a table about attack speed.
 for table in ac_tables:
     headers =[]
     rows = table.find_all('tr')
